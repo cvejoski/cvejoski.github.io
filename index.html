@@ -6,45 +6,137 @@
   <title>Kostadin Cvejoski - Machine Learning Research Scientist</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <div class="logo">
-        <img src="your-image.jpg" alt="Kostadin Cvejoski" />
-      </div>
-      <div class="header-text">
-        <h1>Kostadin Cvejoski</h1>
-        <p>Machine Learning Research Scientist</p>
-      </div>
-    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="KostadinCvejoskiCV.pdf" target="_blank">CV</a>
     </nav>
   </header>
 
   <main>
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a Machine Learning Research Scientist with a PhD in Computer Science from the University of Bonn. 
-        My expertise includes Natural Language Processing (NLP), time series analysis, and generative AI. 
-        I lead and contribute to projects delivering cutting-edge ML solutions for industrial applications.
-      </p>
-      <ul>
-        <li>Core Competencies: Deep Learning, Statistics, LLMs, Generative AI, Probabilistic Models</li>
-        <li>ML Frameworks: PyTorch, TensorFlow, JAX</li>
-        <li>Languages: Python, Java, C++, JavaScript</li>
-      </ul>
+      <div class="about-content">
+        <div class="logo-header">
+          <div class="logo">
+            <img src="myimage.jpg" alt="Kostadin Cvejoski" />
+          </div>
+          <div class="header-text">
+            <h1>Kostadin Cvejoski</h1>
+            <p>Machine Learning Research Scientist</p>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/cvejoski" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/cvejoski" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?hl=en&user=k1WSOfoAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+              <a href="https://dblp.org/pid/185/2496.html" target="_blank"><i class="fas fa-database"></i></a>
+            </div>
+          </div>
+        </div>
+        <div style="max-width: 1000px; margin: 0 0 0 50px;">
+          <p>
+            I am Kostadin, a Machine Learning Research Scientist with a background in computer science. I work at <a href="https://www.iais.fraunhofer.de/en.html" target="_blank">Fraunhofer IAIS</a> as a Team Leader and Research Scientist.
+            I am also part of the research team at the <a href="https://lamarr-institute.org/" target="_blank">LAMARR Institute for Machine Learning and Artificial Intelligence</a>.
+          </p>
+          <p>
+            My PhD under the supervision of <a href="https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/tra1/mitgliederverzeichnis/christian-bauckhage" target="_blank">Prof. Dr. Christian Bauckhage</a> was centered on
+            Natural Language Processing, with a specific focus on integrating temporal information into Large Language Models.
+          </p>
+          <p>
+            As a Research Scientist at Fraunhofer IAIS, I lead and contribute to diverse projects that bring cutting-edge ML solutions to various industrial domains, like predictive maintenance, process optimization, security, autonomous driving, RAG, etc. I am also part of the LAMARR Institute for ML and AI.
+          </p>
+          <p>
+            My ongoing research focuses on:
+          </p>
+          <ul>
+            <li>Representation learning for reasoning in foundation language models,</li>
+            <li>Incorporating temporal context information in large language models,</li>
+            <li>Time series foundation models.</li>
+          </ul>
+          <p>
+            I am passionate about developing state-of-the-art ML solutions that have a real-world impact. For example, my team and I won the <a href="https://www.ideaconnection.com/syngenta-crop-challenge/finalists.php" target="_blank">2019 Syngenta Crop Data Science Challenge</a>.
+          </p>
+          <p>
+            I am always open to new collaborations and opportunities, so feel free to reach out!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <!-- Filter Section -->
+      <section id="filter">
+        <div class="filter-container">
+          <h3>Filter by Tags:</h3>
+          <div class="filter-buttons">
+            <button class="filter-button all" onclick="filterPublications('all')">All</button>
+            <button class="filter-button nlp" onclick="filterPublications('NLP')">NLP</button>
+            <button class="filter-button time-series" onclick="filterPublications('Time Series')">Time Series</button>
+            <button class="filter-button predictive-maintenance" onclick="filterPublications('Predictive Maintenance')">Predictive Maintenance</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="publication" data-tags="NLP">
+        <img src="https://via.placeholder.com/300" alt="Publication 4" class="publication-image">
+        <div class="publication-details">
+          <h3>Beyond spectral clustering: a comparative study of community detection for document clustering</h3>
+          <p><strong>Christian Bauckhage</strong>, <strong>Kostadin Cvejoski</strong>, César Ojeda, Rafet Sifa</p>
+          <p>Data Science–Analytics and Applications: Proceedings of the 1st International Data Science Conference–iDSC2017</p>
+          <div class="publication-tags">
+            <span class="tag nlp">NLP</span>
+          </div>
+          <div class="publication-links">
+            <a href="https://linktopaper.com" target="_blank"><i class="fas fa-file-alt"></i> Read Paper</a>
+            <a href="https://github.com/repo" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="Time Series">
+        <img src="https://via.placeholder.com/300" alt="Publication 5" class="publication-image">
+        <div class="publication-details">
+          <h3>Recurrent point processes for dynamic review models</h3>
+          <p><strong>Kostadin Cvejoski</strong>, Ramses J Sanchez, Bogdan Georgiev, Jannis Schuecker, Christian Bauckhage, César Ojeda</p>
+          <p>arXiv preprint arXiv:1912.04132</p>
+          <div class="publication-tags">
+            <span class="tag time-series">Time Series</span>
+          </div>
+          <div class="publication-links">
+            <a href="https://linktopaper.com" target="_blank"><i class="fas fa-file-alt"></i> Read Paper</a>
+            <a href="https://github.com/repo" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="NLP">
+        <img src="https://via.placeholder.com/300" alt="Publication 6" class="publication-image">
+        <div class="publication-details">
+          <h3>Interpretable matrix factorization with stochasticity constrained nonnegative DEDICOM</h3>
+          <p><strong>Rafet Sifa</strong>, César Ojeda, <strong>Kostadin Cvejoski</strong>, Christian Bauckhage</p>
+          <p>Proc. KDML</p>
+          <div class="publication-tags">
+            <span class="tag nlp">NLP</span>
+          </div>
+          <div class="publication-links">
+            <a href="https://linktopaper.com" target="_blank"><i class="fas fa-file-alt"></i> Read Paper</a>
+            <a href="https://github.com/repo" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
-      <h2>Experience</h2>
+      <!-- <h2>Experience</h2>
       <h3>Fraunhofer IAIS</h3>
       <p><strong>Team Leader</strong> (Sep 2023 - Present)</p>
       <ul>
@@ -56,12 +148,12 @@
         <li>Advanced research in NLP, integrating temporal dynamics into LLMs.</li>
         <li>Developed state-of-the-art ML solutions for clients like PwC and Germany's Federal Criminal Police Office.</li>
         <li>Worked on time series models, distributed training, and interpretability.</li>
-      </ul>
+      </ul> -->
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
+      <!-- <h2>Projects</h2>
       <div class="carousel">
         <div class="slide">
           <h3>Password Guessing with LLMs</h3>
@@ -75,25 +167,7 @@
           <h3>Time Series Foundation Models</h3>
           <p>Ongoing research into foundation models for time series data and temporal point processes.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to connect with me:</p>
-      <ul>
-        <li><a href="https://github.com/cvejoski" target="_blank">GitHub</a></li>
-        <li><a href="https://scholar.google.com/citations?hl=en&user=k1WSOfoAAAAJ" target="_blank">Google Scholar</a></li>
-        <li><a href="https://linkedin.com/in/cvejoski" target="_blank">LinkedIn</a></li>
-      </ul>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <button type="submit">Submit</button>
-      </form>
+      </div> -->
     </section>
   </main>
 

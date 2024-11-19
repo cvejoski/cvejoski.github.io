@@ -24,3 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
     form.reset();
   });
 });
+
+function filterPublications(tag) {
+  const publications = document.querySelectorAll('.publication');
+  publications.forEach(publication => {
+    const tags = publication.dataset.tags.split(',').map(tag => tag.trim());
+    if (tag === 'all' || tags.includes(tag)) {
+      publication.style.display = 'flex';
+    } else {
+      publication.style.display = 'none';
+    }
+  });
+}
